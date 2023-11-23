@@ -1,0 +1,236 @@
+/* colores */
+h{
+    color: #d47516; /* primario */
+}
+
+
+/* ESTILOS COMUNES */
+
+*{
+    box-sizing: border-box;
+    }
+body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+/* ESTILOS HEADER INDEX*/
+.headerindex{
+    display: none;
+}
+@media (max-width:991px) {
+    .headerindex{
+        display: block;
+    }
+    
+}
+
+/* ESTILOS CARROUSEL */
+#carouselExample img{
+    width: 100vw !important;
+    height: 35vw !important;
+}
+@media (max-width:991px) {
+#carouselExample{
+    display: none;
+}
+    
+}
+
+/* ESTILOS HEADER */
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/carrusel_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat',
+}
+
+header div{
+    padding: 10px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, .7);
+    background-image: linear-gradient(#d47516, #d47516);
+    color: azure;
+    font-size: 1.1rem;
+}
+@media (max-width:800px) {
+    header {background-position: center;}
+}
+.headeriluminacion{
+    color: azure;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* estilos navbar boos*/
+.navbar{
+    background-color: rgba(255, 255, 255, 0.486) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+@media (max-width: 991px) {
+    .navbar-nav{
+        text-align: center;
+    }
+}
+
+.navbar-nav a:hover{
+    background-color: #d47516;
+    color: black;
+}
+
+/* estilos navbar */
+.formnav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 10px;
+    border-color: rgba(235, 129, 30, 0.656);
+}
+.formnav a{
+    color: azure;
+    padding: 14px;
+    text-decoration: none;
+}
+.formnav a:hover{
+    background-color: #d47516;
+}
+
+@media (max-width:800px){
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a{
+        text-align: center;
+    }
+}
+
+/* estilo clase principal */
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    padding: 20px;
+    background-color: #d47516;
+    text-align: center;
+}
+main{
+    padding: 20px;
+    background-color: #201f1e;
+    text-align: center;
+}
+.enlacesprincipales{
+    display: flex;
+    justify-content: center;
+}
+.enlacesprincipales article{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+article img{
+    width: 100%;
+    height: 20vw;
+    margin: 10px;
+    border-style: groove;
+}
+
+/* estilo footer */
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: azure;
+}
+
+/* estilo formulario */
+form{
+    padding: 40px;
+    background-color: #d47516;
+    border: 7px outset black;
+}
+label{
+    color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 6px double black;
+}
+legend{    
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+@media (max-width:600px){
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ESTILO PRINCIPAL TARJETAS */
+.tarjetas{
+    display: grid;
+    grid-template-columns: 25dvw 25dvw 25dvw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+}
+@media (max-width:600px) {
+    .tarjetas{
+        display: block;
+    }
+    
+}
+.img-card-img-top{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: #d47516;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-text{
+    font-weight: 500;
+    font-style: oblique;
+}
+.botoncomprar{
+    background-color: #d47516;
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin:auto;
+    text-align: center;
+    width: fit-content;
+}
+.botoncomprar:hover{
+    background-color: #706f6f;
+}
